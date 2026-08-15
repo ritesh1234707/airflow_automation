@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #050505;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar for Holo theme */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e1e1e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B4F73C;
+}
+
+/* Holo Dark Glassmorphism */
+.glass-panel {
+  background: rgba(13, 13, 13, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card {
+  background: rgba(18, 18, 18, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(180, 247, 60, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(180, 247, 60, 0.2);
+  transform: translateY(-2px);
+}
+
+.glass-input {
+  background: rgba(13, 13, 13, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.glass-input:focus {
+  outline: none;
+  border-color: #B4F73C;
+  box-shadow: 0 0 0 2px rgba(180, 247, 60, 0.25);
+}
+
+/* Holo Text Highlights */
+.text-lime-highlight {
+  color: #B4F73C;
+}
+
+.text-gradient-lime {
+  background: linear-gradient(135deg, #FFFFFF 0%, #B4F73C 60%, #10B981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Dribbble Style Pill Button Component */
+.holo-btn-primary {
+  display: inline-flex;
+  items-center: center;
+  background-color: #B4F73C;
+  color: #000000;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  padding: 0.375rem 0.375rem 0.375rem 1.5rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 20px rgba(180, 247, 60, 0.35);
+}
+
+.holo-btn-primary:hover {
+  background-color: #9EF01A;
+  box-shadow: 0 0 30px rgba(180, 247, 60, 0.55);
+  transform: translateY(-1px);
+}
+
+.holo-arrow-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: #000000;
+  color: #B4F73C;
+  border-radius: 9999px;
+  margin-left: 0.75rem;
+  transition: transform 0.25s ease;
+}
+
+.holo-btn-primary:hover .holo-arrow-box {
+  transform: scale(1.08) rotate(45deg);
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+}
+
+/* Background Grid Overlay */
+.bg-grid-holo {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
