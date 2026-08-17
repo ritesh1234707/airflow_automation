@@ -70,9 +70,9 @@ export default function FAQ({ onBookClick }) {
           </p>
           <button
             onClick={onBookClick}
-            className="holo-btn-primary py-3 px-6 text-xs shadow-glow-lime"
+            className="holo-btn-primary py-3 px-6 text-xs shadow-glow-lime inline-flex"
           >
-            <span>Book Strategy Call</span>
+            <span>Book A Strategy Call</span>
             <span className="holo-arrow-box w-7 h-7">
               <ArrowUpRight className="w-3.5 h-3.5" />
             </span>

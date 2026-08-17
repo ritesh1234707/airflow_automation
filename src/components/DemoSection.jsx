@@ -198,7 +198,7 @@ export default function DemoSection({ onBookClick }) {
                     <MessageCircle className="w-4 h-4" />
                     WhatsApp Business API Connected • Direct CRM Trigger
                   </span>
-                  <span className="text-[10px] bg-[#25D366]/20 px-2 py-0.5 rounded font-mono font-bold">98.4% Open Rate</span>
+                  <span className="text-[10px] bg-[#25D366]/20 px-2 py-0.5 rounded font-mono font-bold">Instant Cloud Delivery</span>
                 </div>
 
                 <div className="space-y-3">
@@ -227,16 +227,16 @@ export default function DemoSection({ onBookClick }) {
                     <p className="text-xl font-extrabold text-[#B4F73C] font-mono mt-1">{activeTab.metrics?.latency}</p>
                   </div>
                   <div className="bg-[#121212] p-4 rounded-xl text-center border border-white/10">
-                    <p className="text-[10px] text-neutral-400 uppercase font-semibold">Speech Accuracy</p>
+                    <p className="text-[10px] text-neutral-400 uppercase font-semibold">Speech Quality</p>
                     <p className="text-xl font-extrabold text-emerald-400 font-mono mt-1">{activeTab.metrics?.accuracy}</p>
                   </div>
                   <div className="bg-[#121212] p-4 rounded-xl text-center border border-white/10">
-                    <p className="text-[10px] text-neutral-400 uppercase font-semibold">Calls Handled Today</p>
-                    <p className="text-xl font-extrabold text-white font-mono mt-1">{activeTab.metrics?.callsHandledToday}</p>
+                    <p className="text-[10px] text-neutral-400 uppercase font-semibold">System Uptime</p>
+                    <p className="text-xl font-extrabold text-white font-mono mt-1">{activeTab.metrics?.availability}</p>
                   </div>
                   <div className="bg-[#121212] p-4 rounded-xl text-center border border-white/10">
-                    <p className="text-[10px] text-neutral-400 uppercase font-semibold">Lead Conversion</p>
-                    <p className="text-xl font-extrabold text-[#B4F73C] font-mono mt-1">{activeTab.metrics?.conversionRate}</p>
+                    <p className="text-[10px] text-neutral-400 uppercase font-semibold">CRM Integration</p>
+                    <p className="text-xl font-extrabold text-[#B4F73C] font-mono mt-1">{activeTab.metrics?.crmSync}</p>
                   </div>
                 </div>
 
@@ -252,7 +252,7 @@ export default function DemoSection({ onBookClick }) {
                     onClick={onBookClick}
                     className="mt-2 text-xs font-bold text-[#B4F73C] hover:underline"
                   >
-                    Request Custom Loom Demo For Your Business →
+                    Request Custom Live Demo For Your Business →
                   </button>
                 </div>
               </div>
@@ -262,14 +262,14 @@ export default function DemoSection({ onBookClick }) {
             <div className="mt-6 pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs">
               <span className="text-neutral-400 flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-[#B4F73C]" />
-                SOC2 Type II & HIPAA Compliant Architecture
+                Secure &amp; Reliable Automation Architecture
               </span>
               
               <button
                 onClick={onBookClick}
-                className="holo-btn-primary py-2 px-5 text-xs shadow-glow-lime"
+                className="holo-btn-primary py-2.5 px-6 text-xs shadow-glow-lime inline-flex"
               >
-                <span>Build This For My Business</span>
+                <span>Book A Strategy Call</span>
                 <span className="holo-arrow-box w-7 h-7">
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </span>

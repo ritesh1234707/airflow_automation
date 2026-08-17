@@ -16,8 +16,9 @@ export default function Navbar({ onBookClick, calUrl }) {
   const navLinks = [
     { name: 'Services', href: '#services' },
     { name: 'Process', href: '#how-it-works' },
-    { name: 'Demos', href: '#demos' },
+    { name: 'Use Cases', href: '#case-studies' },
     { name: 'Industries', href: '#industries' },
+    { name: 'Founder', href: '#founder' },
     { name: 'FAQ', href: '#faq' },
   ];
 
@@ -37,13 +38,13 @@ export default function Navbar({ onBookClick, calUrl }) {
               AIR FLOW <span className="text-[#B4F73C]">AUTOMATION</span>
             </span>
             <span className="text-[9px] uppercase tracking-widest text-neutral-400 font-semibold -mt-1">
-              Holo AI Systems
+              Custom AI Systems
             </span>
           </div>
         </a>
 
         {/* Desktop Nav Links */}
-        <nav className="hidden md:flex items-center gap-8 bg-[#0F0F0F]/80 backdrop-blur-md px-7 py-2.5 rounded-full border border-white/10 shadow-2xl">
+        <nav className="hidden md:flex items-center gap-7 bg-[#0F0F0F]/80 backdrop-blur-md px-7 py-2.5 rounded-full border border-white/10 shadow-2xl">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -58,19 +59,12 @@ export default function Navbar({ onBookClick, calUrl }) {
         {/* CTA Actions */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="#demos"
-            className="text-xs font-semibold text-neutral-300 hover:text-white px-3 py-2 transition-colors"
-          >
-            Solutions
-          </a>
-          
-          <a
             href={calUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="holo-btn-primary group"
           >
-            <span>Book a Call Now</span>
+            <span>Book A Strategy Call</span>
             <span className="holo-arrow-box">
               <ArrowUpRight className="w-4 h-4" />
             </span>
@@ -108,7 +102,7 @@ export default function Navbar({ onBookClick, calUrl }) {
               onClick={() => setMobileMenuOpen(false)}
               className="w-full py-3.5 rounded-full bg-[#B4F73C] text-black font-extrabold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-glow-lime"
             >
-              <span>Book a Call Now</span>
+              <span>Book A Strategy Call</span>
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>

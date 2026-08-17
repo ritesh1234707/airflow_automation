@@ -27,10 +27,15 @@ export default function Services({ onSelectService }) {
           <p className="text-neutral-400 text-base sm:text-lg">
             We build turn-key automation systems tailored to capture every inquiry, optimize your pipeline, and scale operations without payroll overhead.
           </p>
+          <div className="pt-2">
+            <p className="inline-block text-xs text-[#B4F73C] font-medium px-4 py-1.5 rounded-full bg-[#B4F73C]/10 border border-[#B4F73C]/20">
+              💡 Every system is custom-built and can be combined into a complete automation ecosystem.
+            </p>
+          </div>
         </div>
 
         {/* 6 Grid Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
           {services.map((service) => {
             const Icon = iconMap[service.iconName] || Bot;
             return (
@@ -71,7 +76,7 @@ export default function Services({ onSelectService }) {
                     onClick={() => onSelectService(service)}
                     className="w-full py-3 rounded-full bg-[#141414] hover:bg-[#B4F73C] text-white hover:text-black font-bold text-xs flex items-center justify-center gap-2 border border-white/10 transition-all duration-300"
                   >
-                    <span>Request Solution Build</span>
+                    <span>Get A Custom Automation Plan</span>
                     <ArrowUpRight className="w-4 h-4" />
                   </button>
                 </div>

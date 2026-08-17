@@ -172,7 +172,7 @@ export default function TrustSection({ onBookClick, calUrl }) {
                 rel="noopener noreferrer"
                 className="holo-btn-primary w-full justify-center py-3 text-sm shadow-glow-lime inline-flex"
               >
-                <span>Book a Call Now</span>
+                <span>Book A Strategy Call</span>
                 <span className="holo-arrow-box">
                   <ArrowUpRight className="w-4 h-4" />
                 </span>

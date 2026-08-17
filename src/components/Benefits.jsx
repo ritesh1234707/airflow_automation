@@ -7,37 +7,37 @@ export default function Benefits({ onBookClick }) {
       icon: Zap,
       title: "Respond To Leads Instantly",
       description: "Engage prospects within seconds across SMS, WhatsApp, and web chat before your competitors even see the notification.",
-      metric: "< 3 Seconds Speed"
+      metric: "Instant Response"
     },
     {
       icon: ShieldCheck,
       title: "Reduce Manual Work",
       description: "Automate repetitive data entry, follow-ups, and calendar coordination so your human team focuses purely on high-value sales.",
-      metric: "85% Less Friction"
+      metric: "Zero Manual Friction"
     },
     {
       icon: Clock,
       title: "Save Time Every Day",
-      description: "Reclaim 20 to 40 hours per employee every single week by delegating routine inquiries to intelligent AI workflows.",
-      metric: "30+ Hours Saved/wk"
+      description: "Reclaim hours every single day by delegating routine inquiries to intelligent custom AI workflows.",
+      metric: "Daily Time Saved"
     },
     {
       icon: Smile,
       title: "Improve Customer Experience",
       description: "Deliver instant, accurate, friendly answers at any hour of the day or night without keeping clients waiting on hold.",
-      metric: "99.2% Satisfaction"
+      metric: "Human-Like Quality"
     },
     {
       icon: TrendingUp,
       title: "Increase Conversion Rates",
       description: "Nurture cold leads automatically with customized drip sequences until they are qualified and ready to buy.",
-      metric: "+35% Close Rate"
+      metric: "Higher Conversion"
     },
     {
       icon: Users,
       title: "Scale Without Hiring",
-      description: "Multiply your operational bandwidth by 10x without adding expensive management, benefits, or office space.",
-      metric: "10x Bandwidth"
+      description: "Multiply your operational bandwidth smoothly without adding expensive overhead or operational complexity.",
+      metric: "Scalable Workflows"
     }
   ];
 

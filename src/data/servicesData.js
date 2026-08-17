@@ -32,7 +32,7 @@ export const services = [
     title: "WhatsApp Automation",
     iconName: "MessageSquare",
     description: "Automated conversations, follow-ups, reminders, and lead nurturing directly on WhatsApp.",
-    tag: "98% Open Rate",
+    tag: "High Open Rates",
     badgeColor: "from-emerald-500 to-teal-500",
     features: [
       "Broadcasting & targeted drip sequences",

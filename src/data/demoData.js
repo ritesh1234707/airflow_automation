@@ -55,10 +55,10 @@ export const demoTabs = [
     badge: "Live Telephony",
     description: "Inspect live call logs, latency metrics (<450ms voice synthesis), and automated CRM updates.",
     metrics: {
-      latency: "380ms",
-      accuracy: "99.4%",
-      callsHandledToday: 482,
-      conversionRate: "42.8%"
+      latency: "< 380ms",
+      accuracy: "Human Cadence",
+      availability: "24/7 Live",
+      crmSync: "Instant Sync"
     }
   }
 ];

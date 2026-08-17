@@ -11,7 +11,7 @@ const iconMap = {
   Briefcase
 };
 
-export default function Industries({ onBookClick }) {
+export default function Industries({ onBookClick, calUrl }) {
   return (
     <section id="industries" className="py-24 relative bg-[#050505]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -19,7 +19,7 @@ export default function Industries({ onBookClick }) {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="text-xs uppercase font-bold tracking-widest text-[#B4F73C] px-3.5 py-1.5 rounded-full bg-[#B4F73C]/10 border border-[#B4F73C]/20">
-            Tailored Domain Expertise
+            Flexible Solutions For Multiple Service-Based Industries
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white">
             Industries We <span className="text-gradient-lime">Help Scale</span>
@@ -73,6 +73,24 @@ export default function Industries({ onBookClick }) {
               </div>
             );
           })}
+        </div>
+
+        {/* Bottom Custom Industry Note & CTA */}
+        <div className="mt-14 p-8 rounded-3xl bg-[#0E0E0E] border border-white/10 text-center max-w-3xl mx-auto space-y-4">
+          <p className="text-base text-white font-semibold">
+            Don't see your industry? We build custom automation systems tailored to your workflow.
+          </p>
+          <a
+            href={calUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="holo-btn-primary py-3 px-7 text-xs inline-flex shadow-glow-lime"
+          >
+            <span>Get A Custom Automation Plan</span>
+            <span className="holo-arrow-box">
+              <ArrowUpRight className="w-4 h-4" />
+            </span>
+          </a>
         </div>
 
       </div>

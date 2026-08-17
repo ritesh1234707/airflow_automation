@@ -46,10 +46,10 @@ export default function About({ onBookClick }) {
 
             <div className="pt-4 flex flex-wrap items-center gap-6 text-xs text-neutral-400">
               <span className="flex items-center gap-1.5 font-semibold text-white">
-                <Award className="w-4 h-4 text-[#B4F73C]" /> Top-Rated AI Agency 2026
+                <Award className="w-4 h-4 text-[#B4F73C]" /> Production-Ready Architectures
               </span>
               <span className="flex items-center gap-1.5 font-semibold text-white">
-                <ShieldCheck className="w-4 h-4 text-emerald-400" /> Enterprise SLA Guarantee
+                <ShieldCheck className="w-4 h-4 text-emerald-400" /> Custom Tailored Workflows
               </span>
             </div>
           </div>
@@ -66,18 +66,18 @@ export default function About({ onBookClick }) {
               <div>
                 <h3 className="text-2xl font-extrabold text-white">Built For High-Scale Growth</h3>
                 <p className="text-xs text-neutral-400 mt-2">
-                  We design customized Make, n8n, OpenAI, and telephony workflows that operate autonomously with zero downtime.
+                  We design customized Make, n8n, OpenAI, and telephony workflows that operate autonomously around the clock.
                 </p>
               </div>
 
               <div className="p-4 rounded-2xl bg-[#141414] border border-white/10 grid grid-cols-2 gap-4 text-center">
                 <div>
-                  <p className="text-2xl font-extrabold text-[#B4F73C] font-mono">500k+</p>
-                  <p className="text-[10px] text-neutral-400 uppercase">Leads Processed</p>
+                  <p className="text-xl font-extrabold text-[#B4F73C] font-mono">Custom Built</p>
+                  <p className="text-[10px] text-neutral-400 uppercase">OpenAI &amp; n8n</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-extrabold text-white font-mono">99.9%</p>
-                  <p className="text-[10px] text-neutral-400 uppercase">System Uptime</p>
+                  <p className="text-xl font-extrabold text-white font-mono">24/7 Live</p>
+                  <p className="text-[10px] text-neutral-400 uppercase">Automated Operations</p>
                 </div>
               </div>
             </div>

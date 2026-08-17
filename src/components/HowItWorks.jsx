@@ -6,7 +6,7 @@ export default function HowItWorks({ onBookClick, calUrl }) {
     {
       num: "01",
       icon: Calendar,
-      title: "Book a Call Now",
+      title: "Book A Strategy Call",
       description: "We discuss your current lead workflow, bottlenecks, tech stack, and automation goals on a 15-min discovery call.",
       timeline: "Day 1"
     },
@@ -108,7 +108,7 @@ export default function HowItWorks({ onBookClick, calUrl }) {
             rel="noopener noreferrer"
             className="holo-btn-primary shadow-glow-lime py-3.5 px-8 inline-flex"
           >
-            <span>Start Step 1: Book a Call Now</span>
+            <span>Start Step 1: Book A Strategy Call</span>
             <span className="holo-arrow-box">
               <ArrowUpRight className="w-4 h-4" />
             </span>

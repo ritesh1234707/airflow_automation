@@ -33,7 +33,7 @@ export default function ContactCTA({ onBookClick, calUrl }) {
               </h2>
 
               <p className="text-neutral-300 text-base leading-relaxed">
-                Book a call now and discover how AI can save time, reduce costs, and increase revenue for your organization.
+                Book a strategy call to discover how custom AI systems can eliminate bottlenecks, capture leads 24/7, and scale operations.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-2">
@@ -43,7 +43,7 @@ export default function ContactCTA({ onBookClick, calUrl }) {
                   rel="noopener noreferrer"
                   className="holo-btn-primary py-3.5 px-8 text-sm shadow-glow-lime inline-flex"
                 >
-                  <span>Book a Call Now</span>
+                  <span>Book A Strategy Call</span>
                   <span className="holo-arrow-box">
                     <ArrowUpRight className="w-4 h-4" />
                   </span>
