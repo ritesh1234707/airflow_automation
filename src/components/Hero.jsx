@@ -46,7 +46,7 @@ export default function Hero({ onBookClick, calUrl }) {
           {/* Dribbble Style CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             
-            {/* Primary CTA Button -> Cal.com link */}
+            {/* Primary CTA Button -> Google Calendar link */}
             <a
               href={calUrl}
               target="_blank"
