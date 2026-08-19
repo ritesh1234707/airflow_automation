@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Clock, PhoneOff, RotateCcw, AlertTriangle, Calculator, DollarSign, ArrowUpRight } from 'lucide-react';
+import { Calculator, ArrowUpRight, TrendingUp, Sparkles } from 'lucide-react';
 
 export default function TrustSection({ onBookClick, calUrl }) {
   const [monthlyLeads, setMonthlyLeads] = useState(150);
@@ -10,95 +10,43 @@ export default function TrustSection({ onBookClick, calUrl }) {
   const lostRevenue = lostLeads * leadValue;
   const hoursSavedPerMonth = Math.round(monthlyLeads * 1.5);
 
-  const painPoints = [
-    {
-      icon: Clock,
-      title: "Slow Response Times",
-      description: "Leads turn cold after 5 minutes of waiting. Manual responses often take hours or days.",
-      badge: "High Risk"
-    },
-    {
-      icon: PhoneOff,
-      title: "Missed Inquiries",
-      description: "Inquiries after business hours, over weekends, or during busy rushes get neglected completely.",
-      badge: "Lost Revenue"
-    },
-    {
-      icon: RotateCcw,
-      title: "Manual Follow-Ups",
-      description: "Sales teams forget to follow up or run out of time, leaving money sitting on the table.",
-      badge: "Inefficient"
-    },
-    {
-      icon: AlertTriangle,
-      title: "Repetitive Admin Work",
-      description: "Staff spend up to 60% of their workday typing data into CRMs instead of closing deals.",
-      badge: "High Overhead"
-    }
-  ];
-
   return (
-    <section className="py-24 relative bg-[#080808] border-y border-white/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="roi-calculator" className="py-20 sm:py-24 relative bg-[#050505] border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-xs font-semibold text-red-400">
-            <AlertTriangle className="w-3.5 h-3.5" />
-            <span>The Hidden Growth Killer</span>
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B4F73C]/10 border border-[#B4F73C]/20 text-xs font-bold text-[#B4F73C]">
+            <Calculator className="w-3.5 h-3.5" />
+            <span>Interactive ROI Calculator</span>
           </div>
           
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white">
-            Businesses Are <span className="text-red-400">Losing Leads</span> Every Day
+            Calculate Your <span className="text-gradient-lime">Revenue Recovery</span>
           </h2>
 
-          <p className="text-neutral-400 text-base sm:text-lg leading-relaxed">
-            Most businesses lose potential customers because they can't respond fast enough. Our AI systems work 24/7 to capture, qualify, and nurture every lead automatically.
+          <p className="text-neutral-400 text-sm sm:text-base leading-relaxed">
+            Leads go cold when response times exceed 5 minutes. See how much revenue your business recovers with instant, 24/7 AI qualification and follow-up.
           </p>
         </div>
 
-        {/* 4 Pain Point Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
-          {painPoints.map((item, idx) => {
-            const Icon = item.icon;
-            return (
-              <div key={idx} className="glass-card p-6 rounded-2xl border border-white/10 bg-[#0F0F0F] relative group">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-12 h-12 rounded-2xl bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400 group-hover:scale-110 transition-transform">
-                    <Icon className="w-6 h-6" />
-                  </div>
-                  <span className="text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full bg-[#161616] border border-white/10 text-neutral-400">
-                    {item.badge}
-                  </span>
-                </div>
-                <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-neutral-400 text-xs leading-relaxed">{item.description}</p>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Interactive Holo ROI Calculator Sub-block */}
-        <div className="mt-16 bg-[#0E0E0E] rounded-3xl border border-[#B4F73C]/30 p-8 sm:p-10 relative overflow-hidden shadow-2xl">
+        {/* Interactive ROI Calculator Card */}
+        <div className="bg-[#0A0A0A] rounded-3xl border border-[#B4F73C]/30 p-6 sm:p-10 relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-96 h-96 bg-[#B4F73C]/5 rounded-full blur-3xl pointer-events-none"></div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
             
             {/* Left Inputs */}
             <div className="lg:col-span-7 space-y-6">
-              <div className="flex items-center gap-2 text-[#B4F73C] font-semibold text-xs tracking-wider uppercase">
-                <Calculator className="w-4 h-4" />
-                <span>Interactive Revenue Recovery Calculator</span>
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-                How Much Is Slow Follow-Up Costing Your Business?
+              <h3 className="text-xl sm:text-2xl font-bold text-white">
+                Customize Your Current Operations
               </h3>
 
               {/* Slider 1 */}
-              <div className="space-y-2">
-                <div className="flex justify-between text-xs">
-                  <label className="text-neutral-300 font-medium">Monthly Inbound Leads</label>
-                  <span className="font-bold text-[#B4F73C] font-mono">{monthlyLeads} leads/mo</span>
+              <div className="space-y-2.5 bg-[#0F0F0F] p-4 rounded-2xl border border-white/5">
+                <div className="flex justify-between text-xs sm:text-sm">
+                  <label className="text-neutral-300 font-medium">Estimated Monthly Inbound Leads</label>
+                  <span className="font-bold text-[#B4F73C] font-mono">{monthlyLeads} leads / mo</span>
                 </div>
                 <input
                   type="range"
@@ -112,8 +60,8 @@ export default function TrustSection({ onBookClick, calUrl }) {
               </div>
 
               {/* Slider 2 */}
-              <div className="space-y-2">
-                <div className="flex justify-between text-xs">
+              <div className="space-y-2.5 bg-[#0F0F0F] p-4 rounded-2xl border border-white/5">
+                <div className="flex justify-between text-xs sm:text-sm">
                   <label className="text-neutral-300 font-medium">Average Deal / Customer Value ($)</label>
                   <span className="font-bold text-[#B4F73C] font-mono">${leadValue.toLocaleString()}</span>
                 </div>
@@ -129,9 +77,9 @@ export default function TrustSection({ onBookClick, calUrl }) {
               </div>
 
               {/* Slider 3 */}
-              <div className="space-y-2">
-                <div className="flex justify-between text-xs">
-                  <label className="text-neutral-300 font-medium">Estimated Leads Lost to Delay (%)</label>
+              <div className="space-y-2.5 bg-[#0F0F0F] p-4 rounded-2xl border border-white/5">
+                <div className="flex justify-between text-xs sm:text-sm">
+                  <label className="text-neutral-300 font-medium">Estimated Leads Lost to Slow Response (%)</label>
                   <span className="font-bold text-red-400 font-mono">{currentLossRate}%</span>
                 </div>
                 <input
@@ -147,22 +95,22 @@ export default function TrustSection({ onBookClick, calUrl }) {
             </div>
 
             {/* Right Output Box */}
-            <div className="lg:col-span-5 bg-[#141414] p-6 sm:p-8 rounded-2xl border border-white/10 text-center space-y-6 shadow-glow-lime-sm">
-              <div className="space-y-1">
-                <p className="text-[10px] uppercase font-bold text-neutral-400 tracking-wider">Estimated Monthly Lost Revenue</p>
-                <h4 className="text-4xl font-extrabold text-red-400 font-mono">
+            <div className="lg:col-span-5 bg-[#121212] p-6 sm:p-8 rounded-3xl border border-white/10 text-center space-y-6 shadow-glow-lime-sm">
+              <div className="space-y-1.5">
+                <p className="text-[11px] uppercase font-bold text-neutral-400 tracking-wider">Estimated Monthly Lost Revenue</p>
+                <h4 className="text-4xl sm:text-5xl font-extrabold text-red-400 font-mono">
                   ${lostRevenue.toLocaleString()} <span className="text-xs font-normal text-neutral-400">/ mo</span>
                 </h4>
               </div>
 
               <div className="pt-4 border-t border-white/10 grid grid-cols-2 gap-4 text-center">
-                <div>
-                  <p className="text-[10px] text-neutral-400 uppercase font-semibold">Leads Recovered</p>
-                  <p className="text-xl font-extrabold text-[#B4F73C] font-mono">+{lostLeads} leads</p>
+                <div className="bg-[#0A0A0A] p-3 rounded-2xl border border-white/5">
+                  <p className="text-[10px] text-neutral-400 uppercase font-semibold">Leads Recoverable</p>
+                  <p className="text-xl font-extrabold text-[#B4F73C] font-mono mt-0.5">+{lostLeads} leads</p>
                 </div>
-                <div>
-                  <p className="text-[10px] text-neutral-400 uppercase font-semibold">Hours Saved</p>
-                  <p className="text-xl font-extrabold text-white font-mono">~{hoursSavedPerMonth} hrs</p>
+                <div className="bg-[#0A0A0A] p-3 rounded-2xl border border-white/5">
+                  <p className="text-[10px] text-neutral-400 uppercase font-semibold">Admin Time Saved</p>
+                  <p className="text-xl font-extrabold text-white font-mono mt-0.5">~{hoursSavedPerMonth} hrs</p>
                 </div>
               </div>
 
@@ -170,9 +118,9 @@ export default function TrustSection({ onBookClick, calUrl }) {
                 href={calUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="holo-btn-primary w-full justify-center py-3 text-sm shadow-glow-lime inline-flex"
+                className="holo-btn-primary w-full justify-center py-3.5 text-xs sm:text-sm shadow-glow-lime inline-flex"
               >
-                <span>Book A Strategy Call</span>
+                <span>Recover This Revenue Now</span>
                 <span className="holo-arrow-box">
                   <ArrowUpRight className="w-4 h-4" />
                 </span>
@@ -186,3 +134,4 @@ export default function TrustSection({ onBookClick, calUrl }) {
     </section>
   );
 }
+

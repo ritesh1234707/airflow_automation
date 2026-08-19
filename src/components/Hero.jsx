@@ -236,7 +236,37 @@ export default function Hero({ onBookClick, calUrl }) {
           </div>
         </div>
 
+        {/* Integrated Tech Stack & Architecture Marquee */}
+        <div className="mt-14 pt-8 border-t border-white/10 text-center max-w-5xl mx-auto">
+
+          <p className="text-xs uppercase font-mono tracking-widest text-neutral-400 font-semibold mb-5">
+            Enterprise Infrastructure &amp; Integrations Powered By
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+            {[
+              { name: "OpenAI GPT-4o", cat: "Reasoning" },
+              { name: "Anthropic Claude", cat: "Document AI" },
+              { name: "n8n Workflow Engine", cat: "Logic" },
+              { name: "Make.com", cat: "Integrations" },
+              { name: "VAPI & ElevenLabs", cat: "Voice AI" },
+              { name: "WhatsApp Business API", cat: "Messaging" },
+              { name: "HubSpot & Salesforce", cat: "CRM Sync" },
+              { name: "Google Workspace", cat: "Calendar/Mail" }
+            ].map((tech, idx) => (
+              <div
+                key={idx}
+                className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0F0F0F] border border-white/10 hover:border-[#B4F73C]/40 transition-all text-xs"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-[#B4F73C]"></span>
+                <span className="font-semibold text-white">{tech.name}</span>
+                <span className="text-[10px] text-neutral-500 font-mono">({tech.cat})</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </section>
   );
 }
+

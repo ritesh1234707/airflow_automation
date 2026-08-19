@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Bot, Instagram, Linkedin, MessageCircle, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
@@ -14,14 +15,14 @@ export default function Footer() {
           
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
+            <Link to="/" className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-full bg-[#121212] border border-[#B4F73C]/40 flex items-center justify-center text-[#B4F73C]">
                 <Bot className="w-5 h-5" />
               </div>
               <span className="font-extrabold text-lg tracking-tight text-white">
                 AIR FLOW <span className="text-[#B4F73C]">AUTOMATION</span>
               </span>
-            </div>
+            </Link>
 
             <p className="text-neutral-400 max-w-sm text-xs leading-relaxed">
               Air Flow Automation designs enterprise-grade AI chatbots, voice receptionists, and autonomous CRM workflows that capture leads and drive revenue 24/7.
@@ -60,27 +61,28 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Col 2: Nav */}
+          {/* Col 2: Navigation */}
           <div className="space-y-3">
-            <h4 className="font-bold text-white uppercase tracking-wider text-[11px]">Navigation</h4>
+            <h4 className="font-bold text-white uppercase tracking-wider text-[11px]">Pages</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-[#B4F73C] transition-colors">Home</a></li>
-              <li><a href="#services" className="hover:text-[#B4F73C] transition-colors">Services</a></li>
-              <li><a href="#how-it-works" className="hover:text-[#B4F73C] transition-colors">Process</a></li>
-              <li><a href="#industries" className="hover:text-[#B4F73C] transition-colors">Industries</a></li>
-              <li><a href="#demos" className="hover:text-[#B4F73C] transition-colors">Interactive Demos</a></li>
+              <li><Link to="/" className="hover:text-[#B4F73C] transition-colors">Home</Link></li>
+              <li><Link to="/services" className="hover:text-[#B4F73C] transition-colors">Solutions &amp; Tech Stack</Link></li>
+              <li><Link to="/use-cases" className="hover:text-[#B4F73C] transition-colors">Industry Use Cases</Link></li>
+              <li><Link to="/process" className="hover:text-[#B4F73C] transition-colors">Process &amp; SLAs</Link></li>
+              <li><Link to="/about" className="hover:text-[#B4F73C] transition-colors">About &amp; Founder</Link></li>
+              <li><Link to="/contact" className="hover:text-[#B4F73C] transition-colors">Contact / Book Call</Link></li>
             </ul>
           </div>
 
-          {/* Col 3: Solutions */}
+          {/* Col 3: Solutions Direct Links */}
           <div className="space-y-3">
             <h4 className="font-bold text-white uppercase tracking-wider text-[11px]">Solutions</h4>
             <ul className="space-y-2">
-              <li><a href="#services" className="hover:text-[#B4F73C] transition-colors">AI Chatbots</a></li>
-              <li><a href="#services" className="hover:text-[#B4F73C] transition-colors">AI Voice Agents</a></li>
-              <li><a href="#services" className="hover:text-[#B4F73C] transition-colors">WhatsApp Automation</a></li>
-              <li><a href="#services" className="hover:text-[#B4F73C] transition-colors">Lead Qualification</a></li>
-              <li><a href="#services" className="hover:text-[#B4F73C] transition-colors">CRM Workflows</a></li>
+              <li><Link to="/services" className="hover:text-[#B4F73C] transition-colors">AI Voice Agents</Link></li>
+              <li><Link to="/services" className="hover:text-[#B4F73C] transition-colors">WhatsApp Automation</Link></li>
+              <li><Link to="/services" className="hover:text-[#B4F73C] transition-colors">AI Chatbots</Link></li>
+              <li><Link to="/services" className="hover:text-[#B4F73C] transition-colors">Lead Qualification</Link></li>
+              <li><Link to="/services" className="hover:text-[#B4F73C] transition-colors">CRM Workflows</Link></li>
             </ul>
           </div>
 
